@@ -27,7 +27,6 @@
     }
     table {
       width: 100%;
-      border-collapse: collapse;
       margin: 10px 0;
     }
     td {
@@ -43,6 +42,14 @@
       max-width: 100%;
       height: auto;
     }
+    .intro td{
+        background-color: #ccc;
+        border: 1px solid;
+
+  
+        
+    }
+   
   </style>
 </head>
 <body>
@@ -62,16 +69,16 @@
 </nav>
 
 <!-- Section 2: Judul di kiri, gambar di kanan -->
-<section>
+<section class="head">
   <table>
     <tr>
-      <td style="width: 60%;">
+      <td style="width: 60%; text-align: left;">
         <h3>Selamat Datang di Website Saya</h3>
         <p>Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini.</p>
         <a href="#">Pelajari Lebih Lanjut</a>
       </td>
       <td style="width: 40%;">
-        <img src="https://via.placeholder.com/600x400" alt="Header Image">
+        <img src="" alt="Header Image">
       </td>
     </tr>
   </table>
@@ -81,9 +88,10 @@
 <section>
   <h2>About Me</h2>
   <p style="text-align:center;">A brief introduction about myself</p>
-  <table>
-    <tr>
-      <td>Full Name</td>
+    
+  <table class="intro" style="border-spacing: 10px 20px; " >
+    <tr >
+      <td >Full Name</td>
       <td>Education</td>
       <td>Pekerjaan</td>
     </tr>
